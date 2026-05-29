@@ -1,0 +1,20 @@
+project:
+  name: "Intelligent Healthcare Support System"
+  domain: "Healthcare"
+  api_prefix: "/api/v1"
+model:
+  task: "Multi-class classification for symptom triage level"
+  target_column: "triage_level"
+  model_path: "artifacts/models/triage_model.joblib"
+  metrics_path: "artifacts/metrics/training_metrics.json"
+rag:
+  knowledge_base: "artifacts/knowledge/knowledge_base.csv"
+  embeddings_path: "artifacts/knowledge/knowledge_embeddings.json"
+database:
+  type: "MongoDB or Azure Cosmos DB Mongo API"
+  db_name: "healthcare_support_db"
+azure:
+  compute: "Azure App Service"
+  ai: "Azure OpenAI / Azure AI Foundry"
+  search: "Azure AI Search or local vector store"
+  data_engineering: "ADF/Fabric/Databricks style raw-staged-curated flow"
