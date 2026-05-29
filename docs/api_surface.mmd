@@ -1,0 +1,8 @@
+flowchart LR
+  API[/FastAPI /docs/] --> Health[/health/]
+  API --> Status[/api/v1/status/]
+  API --> Ingest[/api/v1/data/ingest/]
+  API --> Predict[/api/v1/ml/predict/]
+  API --> Search[/api/v1/documents/search/]
+  API --> Agent[/api/v1/agents/ask/]
+  API --> Analytics[/api/v1/analytics/kpis/]

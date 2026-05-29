@@ -1,0 +1,17 @@
+sequenceDiagram
+  participant U as User
+  participant A as FastAPI
+  participant M as ML Inference
+  participant R as RAG Agent
+  participant D as MongoDB/Cosmos
+  U->>A: POST request
+  A->>A: Pydantic validation + logging
+  alt Prediction
+    A->>M: feature payload
+    M-->>A: model output
+  else Agent Q&A
+    A->>R: question
+    R-->>A: answer + context
+  end
+  A->>D: save request/response log
+  A-->>U: JSON response

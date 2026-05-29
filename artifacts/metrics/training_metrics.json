@@ -1,0 +1,21 @@
+{
+  "rows": 260,
+  "target": "triage_level",
+  "features": [
+    "age",
+    "primary_symptom",
+    "fever",
+    "oxygen_saturation",
+    "heart_rate",
+    "pain_level",
+    "symptom_days",
+    "chronic_condition"
+  ],
+  "model_name": "RandomForestClassifier for symptom triage",
+  "accuracy": 0.8615384615384616,
+  "class_distribution": {
+    "Routine": 177,
+    "Urgent": 71,
+    "Emergency": 12
+  }
+}

@@ -1,0 +1,6 @@
+flowchart TD
+  Q[User Question] --> Tokenize[Tokenize Query]
+  Tokenize --> Search[Search Knowledge Embeddings]
+  Search --> Context[Top Context Chunks]
+  Context --> LLM[Azure OpenAI / Local Fallback]
+  LLM --> Answer[Grounded Answer]

@@ -1,0 +1,5 @@
+flowchart LR
+  Raw[Raw Zone] --> Staged[Staged/Cleaned Zone]
+  Staged --> Curated[Curated Tables]
+  Curated --> Semantic[Power BI Semantic Model]
+  Semantic --> Dashboard[Power BI Dashboard]

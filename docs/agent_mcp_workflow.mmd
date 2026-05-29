@@ -1,0 +1,7 @@
+flowchart TD
+  Question[Question] --> Intent[Intent Detection]
+  Intent -->|metrics trend dashboard| AnalyticsAgent
+  Intent -->|policy knowledge document| RAGAgent
+  AnalyticsAgent --> Trace[MCP-style Trace]
+  RAGAgent --> Trace
+  Trace --> Response[Final Response]

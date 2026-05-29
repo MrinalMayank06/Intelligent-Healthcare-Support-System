@@ -1,0 +1,85 @@
+[
+  {
+    "title": "Emergency symptoms",
+    "content": "Severe chest pain, low oxygen saturation, severe breathing difficulty, confusion, fainting, or stroke-like symptoms require emergency escalation.",
+    "tokens": [
+      "breathing",
+      "chest",
+      "confusion",
+      "difficulty",
+      "emergency",
+      "escalation",
+      "fainting",
+      "low",
+      "oxygen",
+      "pain",
+      "require",
+      "saturation",
+      "severe",
+      "stroke-like",
+      "symptoms"
+    ]
+  },
+  {
+    "title": "Triage disclaimer",
+    "content": "The system is a decision support assistant and does not replace a licensed medical professional.",
+    "tokens": [
+      "and",
+      "assistant",
+      "decision",
+      "disclaimer",
+      "does",
+      "licensed",
+      "medical",
+      "not",
+      "professional",
+      "replace",
+      "support",
+      "system",
+      "the",
+      "triage"
+    ]
+  },
+  {
+    "title": "Patient analytics",
+    "content": "Healthcare dashboard tracks triage levels, oxygen saturation, symptom groups, age bands, and chronic-condition risk.",
+    "tokens": [
+      "age",
+      "analytics",
+      "and",
+      "bands",
+      "chronic-condition",
+      "dashboard",
+      "groups",
+      "healthcare",
+      "levels",
+      "oxygen",
+      "patient",
+      "risk",
+      "saturation",
+      "symptom",
+      "tracks",
+      "triage"
+    ]
+  },
+  {
+    "title": "Routine care",
+    "content": "Mild stable symptoms without red flags may be categorized as routine, but worsening symptoms require reassessment.",
+    "tokens": [
+      "but",
+      "care",
+      "categorized",
+      "flags",
+      "may",
+      "mild",
+      "reassessment",
+      "red",
+      "require",
+      "routine",
+      "stable",
+      "symptoms",
+      "without",
+      "worsening"
+    ]
+  }
+]

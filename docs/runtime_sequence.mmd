@@ -1,0 +1,14 @@
+sequenceDiagram
+  participant Client
+  participant API
+  participant Orchestrator
+  participant Tool
+  participant Store
+  Client->>API: /api/v1/agents/ask
+  API->>Orchestrator: route(question)
+  Orchestrator->>Tool: selected tool call
+  Tool->>Store: retrieve data/context
+  Store-->>Tool: context/data
+  Tool-->>Orchestrator: result
+  Orchestrator-->>API: response + trace
+  API-->>Client: JSON

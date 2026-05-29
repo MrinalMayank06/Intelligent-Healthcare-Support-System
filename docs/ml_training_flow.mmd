@@ -1,0 +1,7 @@
+flowchart LR
+  Raw[Raw CSV] --> Clean[Preprocessing]
+  Clean --> Features[Feature Engineering]
+  Features --> Split[Train/Test Split]
+  Split --> Train[Train Model]
+  Train --> Eval[Review Metrics]
+  Eval --> Persist[Joblib + JSON Metrics]

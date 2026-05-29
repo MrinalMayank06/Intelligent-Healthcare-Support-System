@@ -1,0 +1,6 @@
+flowchart LR
+  Dev[Local VS Code] --> Git[GitHub Repo]
+  Git --> Actions[GitHub Actions]
+  Actions --> Tests[pytest]
+  Tests --> App[Azure App Service]
+  App --> Logs[App Logs + Swagger Proof]

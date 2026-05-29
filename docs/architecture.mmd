@@ -1,0 +1,13 @@
+flowchart LR
+  User[User / Reviewer] --> Swagger[Swagger UI]
+  Swagger --> API[FastAPI Backend]
+  API --> Routes[Routes: Data ML Agents Analytics]
+  Routes --> ML[RandomForestClassifier for symptom triage]
+  Routes --> DB[(MongoDB / Cosmos DB)]
+  Routes --> RAG[RAG Pipeline]
+  RAG --> KB[(Knowledge Base + Embeddings)]
+  RAG --> LLM[Azure OpenAI or Fallback]
+  Routes --> MCP[MCP-style Orchestrator]
+  ML --> Artifacts[(Joblib Model + Metrics)]
+  API --> PowerBI[Power BI CSV Export]
+  API --> Azure[Azure App Service]
